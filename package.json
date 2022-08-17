@@ -7,12 +7,15 @@
     "test": "npx tsc && jasmine",
     "dev": "nodemon ./src/app.ts",
     "clean": "rimraf build/",
-    "build": "yarn clean && npx tsc",
-    "start": "npm run build && nodemon build/app.js",
+    "build": "yarn clean &&  npx tsc",
+    "start": "npm run build && nodemon ./build/app.js",
     "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx}'",
     "lint": "eslint . --ext .ts"
   },
-  "keywords": ["Image-Process-Api","Image-Resizeing"],
+  "keywords": [
+    "Image-Process-Api",
+    "Image-Resizeing"
+  ],
   "author": "Eslam Mohamed Moawed Elabd",
   "license": "ISC",
   "dependencies": {
@@ -22,6 +25,7 @@
     "jasmine": "^3.99.0",
     "jasmine-spec-reporter": "^7.0.0",
     "morgan": "^1.10.0",
+    "npx": "^10.2.2",
     "sharp": "^0.30.6",
     "supertest": "^6.2.3"
   },

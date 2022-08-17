@@ -17,7 +17,7 @@ router.get('/', (req: Request, res: Response) => {
 })
 
 // Limit Other EndPoints
-router.get('/*', (req: Request, res: Response) => {
+router.all('/*', (req: Request, res: Response) => {
   const invalidUrl: string = req.url
   res.status(404).json({ Error: '404 Not Found : '.concat(invalidUrl) })
   res.end()

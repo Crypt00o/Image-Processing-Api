@@ -4,7 +4,7 @@
 ---
 > To Use This Image Processing Api Resize Utility:
 ---
-> 127.0.0.0.1: 3000/api/resizedImage/?name=image_name&height=image_height&width=width_height
+> 127.0.0.0.1: 3000/images/resize/?name=image_name&height=image_height&width=width_height
 ---
 > For example: 127.0.0.0.1:3000/images/resize?name=palmtunnel&height=200&width=100
 ---

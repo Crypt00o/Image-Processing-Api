@@ -18,7 +18,7 @@ const createResizeDir = (): boolean => {
     return true
   } else {
     fs.mkdir(resizeDir, (err) => {
-      console.log(`[-] Error : ${err}`)
+     // console.log(`[-] Error : ${err}`)
     })
     return createResizeDir()
   }
@@ -59,7 +59,7 @@ const resizeUtil = async (name: string, height: number, width: number): Promise<
 
     return isResized
   } catch (err) {
-    console.log(` Error : ${err}`)
+   // console.log(` Error : ${err}`)
     return false
   }
 }
